@@ -1,12 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 html, body{
     overflow: hidden;
 }
-
 .container{
     width: 90%;
     margin: 0 auto;
@@ -15,7 +13,6 @@ html, body{
 .float-rigth{
     float: right;
 }
-
 nav{
     background: #ccc;
 }
@@ -26,16 +23,13 @@ nav ul li {
 aside{
     margin-top: 2%;
 }
-
 #header-select{
- 
     padding: 10%;
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: center;
-    border-bottom: 1px solid black; 
-    
+    border-bottom: 1px solid black;   
 }
 #header-select .item{
     margin: 2%;
@@ -54,10 +48,7 @@ aside{
 #body-select .item{
     padding: 5%;
     border-bottom: 1px solid black;
-    
-
 }
-
 #footer-select{
     padding: 5%;
     margin: 0 auto;
@@ -66,14 +57,11 @@ aside{
     padding: 20px;
     width: 100%;
 }
-
 section{
     float: right;
     border: 1px solid black;
-    width: 70%;
-    
+    width: 70%; 
 }
-
 #slide{
     position: relative;
 }
