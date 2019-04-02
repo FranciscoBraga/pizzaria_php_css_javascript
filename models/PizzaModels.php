@@ -3,9 +3,9 @@
 class PizzaModels 
 {
     private $nome;
-    private $ingredientes=[];
-    private $tipoMolho;
-    private $tamanho;
+    private $caminho;
+    private $descricao;
+ 
 
     public function __get($atrr){
         return $this->$atrr;

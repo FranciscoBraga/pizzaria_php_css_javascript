@@ -1,3 +1,8 @@
+<?php
+    require 'controllers/BodySelect.php';
+
+   
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +13,7 @@
     <link rel="stylesheet" href="wwwroot/css/style.css">
     
 </head>
-<body>
+<body >
     <nav><!--inicio nav-->
         <div class="container"> 
             <ul>
@@ -32,14 +37,9 @@
                  
                 </div>
                 <div id="body-select">
-                    <div class="item"><a href="pedido/pedido_pizza.html"><img src="wwwroot/img/pizza2.jpg" alt="" width="80px"></a></div>
-                    <div class="item"><a href="#"><img src="wwwroot/img/pizza2.jpg" alt="" width="80px"></a></div>
-                    <div class="item"><a href="#"><img src="wwwroot/img/pizza2.jpg" alt="" width="80px"></a></div>
-                    <div class="item"><a href="#"><img src="wwwroot/img/pizza2.jpg" alt="" width="80px"></a></div>
-                    <div class="item"><a href="#"><img src="wwwroot/img/pizza2.jpg" alt="" width="80px"></a></div>
-                    <div class="item"><a href="#"><img src="wwwroot/img/pizza2.jpg" alt="" width="80px"></a></div>
-                    <div class="item"><a href="#"><img src="wwwroot/img/pizza2.jpg" alt="" width="80px"></a></div>
-                    <div class="item"><a href="#"><img src="wwwroot/img/pizza2.jpg" alt="" width="80px"></a></div>
+                    <?php foreach ($retorno as $key => $value) {   ?>
+                        <div class="item"><a href="pedido/pedido_pizza.html?id=<?=$value['id']?>"><img src="wwwroot/img/<?=$value['caminho']?>" alt="" width="80px"></a></div>
+                    <?php } ?>
                 </div>
                 <div id="footer-select">
                     <form action="controllers/PizzaController.php">

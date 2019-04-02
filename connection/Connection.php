@@ -18,6 +18,7 @@ class Connection
             return $conn;
         }catch(PDOException $ex){
             echo "Erro: ". $ex->getMessege();
+            echo "Erro: ". $ex->getCode();
         }
     }
 }

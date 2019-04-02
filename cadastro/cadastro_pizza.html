@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro Pizza</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Cadastro de Pizza</legend>
+        <form action="../controllers/PizzaController.php" method="post" enctype="multipart/form-data" >
+            <label for="nome">nome:</label>
+            <input type="text" id="nome" name="nome">
+            
+            <label for="descricao">descricao:</label>
+            <textarea id="descricao" name="descricao"></textarea>
+
+            <label for="caminho">Image:</label>
+            <input type="file" id="caminho" name="caminho">
+        
+            <input type="submit" value="Cadastrar">
+        </form>
+    </fieldset>
+</body>
+</html>
